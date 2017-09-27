@@ -1,0 +1,20 @@
+{
+  "name": "logger",
+  "version": "2.0.0",
+  "main": "backend",
+  "description": "Plugin for Reporting Logs.",
+  "author": "Robins Gupta",
+  "authorEmail": "robinskumar73@gmail.com",
+  "dependencies": {
+    "winston": "^2.3.1",
+    "path": "0.12.7"
+  },
+  "optionalDependencies": {},
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "devDependencies": {
+
+  }
+}
