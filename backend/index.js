@@ -64,8 +64,14 @@ module.exports = function( server, databaseObj, helper, packageObj) {
 
 			//Add exception file..
 			if(packageObj.logger.handleException){
+				let exceptionFileName;
+                if(logPath){
+                    exceptionFileName = path.join(logPath, packageObj.logger.handleException);
+                }else{
+                    exceptionFileName = packageObj.logger.handleException;
+                }
 				conf.exceptionHandlers =  [
-                    new winston.transports.File({ filename: packageObj.logger.handleException })
+                    new winston.transports.File({ filename:  exceptionFileName})
                 ]
 			}
 		}
