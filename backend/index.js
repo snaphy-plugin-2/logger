@@ -17,7 +17,7 @@ module.exports = function( server, databaseObj, helper, packageObj) {
         //Add Console as default..
 		transports.push(new winston.transports.Console({
             handleExceptions: true,
-            json: true,
+            json: false,
             timestamp: true
         }));
 
